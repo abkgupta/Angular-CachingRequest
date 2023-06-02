@@ -24,9 +24,9 @@ import { CacheInterceptor } from './caching/core/cache.interceptor';
   providers: [
     {
       provide:HTTP_INTERCEPTORS,
-      useClass:CacheInterceptor,
+      useClass:CacheInterceptor, 
       multi:true
-    }
+    },
   ],
   bootstrap: [AppComponent]
 })
